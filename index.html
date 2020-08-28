@@ -1,0 +1,334 @@
+<html lang="en">
+
+<head>
+  <title>John-Joseph Vanacore Resume</title>
+  <meta charset="utf-8">
+  <meta name="description" content="John-Joseph Vanacore Resume">
+  <meta name="author" content="John-Joseph Vanacore">
+  <style>
+    body {
+      background-color: grey;
+    }
+
+    .resume {
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+      height: 10.9in;
+      width: 8.5in;
+      margin: auto;
+      font-family: Calibri;
+      font-size: 14;
+      text-align: justify;
+      background-color: white;
+      border-radius: 8px;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 1.75em;
+    }
+
+    h2 {
+      width: 100%;
+      border-bottom: black 1px solid;
+      color: rgb(66, 121, 223);
+      margin: 8px 0 8px 0;
+      padding-bottom: 4px;
+    }
+
+    h3,
+    h4 {
+      margin-bottom: 4px;
+    }
+
+    .left-margin {
+      margin-left: 3em;
+    }
+
+    .right-margin {
+      margin-right: 3em;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: black 3px solid;
+      margin-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    .name {
+      font-family: Georgia;
+      color: rgb(9, 50, 126);
+    }
+
+    .contact-info {
+      text-align: right;
+    }
+
+    footer {
+      display: flex;
+      margin-bottom: 1em;
+      justify-content: flex-end;
+      font-style: italic;
+      font-size: 12;
+    }
+
+    header .header-row {
+      align-self: center;
+      font-family: Georgia;
+    }
+
+    .resume-body {
+      flex-grow: 1;
+      margin: 16px 3em 16px 3em;
+    }
+
+    .summary {
+      font-style: italic;
+      text-align: justify;
+    }
+
+    .dated-entry {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .dated-entry .date-container {
+      flex: 0 0 60px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dated-entry .entry-container {
+      flex-grow: 1;
+    }
+
+    ul {
+      padding-inline-start: 20px;
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+
+    .dated-entry .nested-ul {
+      margin: 1px;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin-right: 3em;
+    }
+
+    .entry-subtitle {
+      font-style: italic;
+    }
+
+    .two-column {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .two-column div {
+      flex-grow: 1;
+      flex-basis: 50%;
+    }
+
+    .two-column .column-left {
+      padding-right: 3em;
+    }
+
+    dt {
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+  </style>
+
+  <style type="text/css" media="print">
+    @page {
+      size: auto;
+      margin: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="resume">
+    <header>
+      <div class="name left-margin">
+        <h1>John-Joseph Vanacore</h1>
+      </div>
+      <div class="contact-info right-margin">
+        <span>201-723-0466</span>
+        <br>
+        <span>johnjoseph.vanacore@gmail.com</span>
+      </div>
+    </header>
+    <section class="resume-body left-margin">
+
+      <div class="summary">Full-stack web developer with broad experience in modern JavaScript libraries, .NET, SQL, and
+        Azure technologies.
+        Equally comfortable with presenting to stakeholders and leading a team as with solving complex business
+        problems.
+        Domain expertise in healthcare standards and interoperability (HL7 and IHE).</div>
+
+      <h2>Work Experience</h2>
+      <article class="dated-entry">
+        <div class="date-container">
+          <h4>2018 -</h4>
+          <h4>Present</h4>
+        </div>
+        <div class="entry-container">
+          <h3 class="entry-title">Senior Software Engineer</h4>
+            <span class="entry-subtitle">Allscripts, VT</span>
+            <ul>
+              <li>Created and established patterns/practices for a new FHIR API native to the flagship ambulatory EHR. Secured with
+                OAuth and OpenID.</li>
+              <li>Worked closely with architects and Microsoft engineers to devise a plan to containerize the legacy ambulatory EHR and host in an Azure Kubernetes cluster.</li>
+              <li>Played a key role in leading the development team through a large-scale source code
+                migration and modernization, through early adoption/research into the new code base and peer training.
+              </li>
+              <li>
+                Assumed a Tech Lead role on a scrum team responsible for clinical interoperability.
+                <ul class="nested-ul">
+                  <li>Interviewed, onboarded, and mentored junior engineers.</li>
+                  <li>Worked with business analysts to determine feature feasibility and timeline.</li>
+                  <li>Assumed responsibility for quality metrics within the team&#39;s domain, for example ensuring all
+                    net-new code was at least 80% covered in unit tests.</li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+      </article>
+
+      <article class="dated-entry">
+        <div class="date-container">
+          <h4>2016 -</h4>
+          <h4>2018</h4>
+        </div>
+        <div class="entry-container">
+          <h3 class="entry-title">Software Engineer</h4>
+            <span class="entry-subtitle">Allscripts, VT</span>
+            <ul>
+              <li>Committed to and delivered key features to certify the ambulatory EHR for
+                Meaningful Use 3 within a strict, six month regulatory-driven timeline.</li>
+              <li>Pitched and executed on an iterative plan to fit automated testing/validation of
+                structured clinical documents (CCDA) into the development team's scope. Prevented escape of at least a
+                dozen bugs.</li>
+              <li>Brought on to a special task force to address web server and client performance.</li>
+            </ul>
+        </div>
+      </article>
+
+      <article class="dated-entry">
+        <div class="date-container">
+          <h4>2014 -</h4>
+          <h4>2016</h4>
+        </div>
+        <div class="entry-container">
+          <h3 class="entry-title">Associate Software Engineer</h4>
+            <span class="entry-subtitle">Allscripts, VT</span>
+            <ul>
+              <li>Collaborated with domestic and international teams to transform service-tier logging
+                from a file-based system to a secure, centralized cloud-based repository.</li>
+              <li>Routinely investigated and resolved critical customer issues within production environments.</li>
+              <li>Represented and helped certify the ambulatory EHR in key IHE interoperability
+                standards via successful cross-vendor testing at Connectathon 2016.</li>
+            </ul>
+        </div>
+      </article>
+
+      <!--<article class="dated-entry">
+      <div class="date-container">
+        <h4>2013 -</h4>
+        <h4>2014</h4>
+      </div>
+      <div class="entry-container">
+        <h3 class="entry-title">Mental Health Technician / Unit Secretary</h4>
+        <span class="entry-subtitle">University of Vermont Medical Center, VT</span>
+        <ul>
+          <li>Aided in a broad scope of unit affairs from ordering labs to admitting/discharging
+            patients as an end-user of the hospitalâ€™s EHR.</li>
+          <li>Collected and logged metrics such as vital signs and glucose levels on a daily basis,
+            reported abnormalities to clinical staff.</li>
+        </ul>
+      </div>
+    </article>-->
+
+      <h2>Skills</h2>
+      <article>
+        <div class="skills-container">
+          <div class="skills-column">
+            <ul>
+              <li>HTML / CSS</li>
+              <li>JavaScript / TypeScript</li>
+              <li>Angular</li>
+            </ul>
+          </div>
+          <div class="skills-column">
+            <ul>
+              <li>C#</li>
+              <li>ASP.NET / Core</li>
+              <li>Azure IaaS / PaaS</li>
+            </ul>
+          </div>
+          <div class="skills-column">
+            <ul>
+              <li>SQL</li>
+              <li>PowerShell / Bash</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <div class="two-column">
+        <div class="column-left">
+          <h2>Education</h2>
+          <article>
+            <div class="entry-container">
+              <h3 class="entry-title">University of Vermont</h4>
+                <span class="entry-subtitle">Burlington, VT</span>
+                <ul>
+                  <li>B.A. Psychology</li>
+                  <li>Courses in web technology and object-oriented programming in Java</li>
+                  <li>Music minor</li>
+                </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="column-right">
+          <h2>Interests</h2>
+          <article>
+            <dl>
+              <dt>Music</dt>
+              <dd>When I'm not coding, I'm playing and performing in the Burlington area with my keyboards and synths.
+              </dd>
+              <dt>Cooking</dt>
+              <dd>There's a planet-ful of extraordinary cuisine out there, and I want to learn to make it all.</dd>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="right-margin">Made from scratch with HTML / CSS</span>
+    </footer>
+  </div>
+</body>
+
+</html>
