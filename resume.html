@@ -5,19 +5,21 @@
   <meta charset="utf-8">
   <meta name="description" content="John-Joseph Vanacore Resume">
   <meta name="author" content="John-Joseph Vanacore">
+  <meta name="viewport" content="width=device-width"/>
   <style>
     body {
       background-color: grey;
       margin: 8px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .resume {
       display: flex;
       flex-direction: column;
       justify-content: stretch;
-      height: 10.8in;
-      width: 8.5in;
-      margin: auto;
+      width: clamp(340px, 95%, 8.5in);
       font-family: Calibri;
       font-size: 14;
       text-align: justify;
