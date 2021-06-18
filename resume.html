@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="John-Joseph Vanacore Resume">
   <meta name="author" content="John-Joseph Vanacore">
-  <meta name="viewport" content="width=device-width"/>
+  <meta name="viewport" content="width=device-width" />
   <style>
     body {
       background-color: grey;
@@ -26,7 +26,7 @@
       background-color: white;
       border-radius: 8px;
     }
-    
+
     h1,
     h2,
     h3,
@@ -42,8 +42,9 @@
       width: 100%;
       border-bottom: black 1px solid;
       color: rgb(66, 121, 223);
-      margin: 8px 0 8px 0;
+      margin: 6px 0 6px 0;
       padding-bottom: 4px;
+      font-size: 1.3em;
     }
 
     h3,
@@ -66,7 +67,7 @@
       align-items: center;
       border-bottom: black 3px solid;
       margin-top: 1em;
-      padding-bottom: 1em;
+      padding-bottom: 0.5em;
     }
 
     .name {
@@ -82,7 +83,7 @@
 
     footer {
       display: flex;
-      margin-bottom: 1em;
+      margin-bottom: .5em;
       justify-content: flex-end;
       font-style: italic;
       font-size: 12;
@@ -95,7 +96,7 @@
 
     .resume-body {
       flex-grow: 1;
-      margin: 16px 3em 16px 3em;
+      margin: 16px 3em 4px 3em;
     }
 
     .summary {
@@ -178,39 +179,62 @@
       <div class="contact-info right-margin">
         <span>201-723-0466</span>
         <span>johnjoseph.vanacore@gmail.com</span>
-        <span>Burlington, VT</span>
+        <span>Winooski, VT</span>
       </div>
     </header>
-    <section class="resume-body left-margin">
 
+    <section class="resume-body left-margin">
       <div class="summary">Full-stack web developer with broad experience in modern JavaScript libraries, .NET, SQL, and
-        Azure technologies. Strong domain expertise in healthcare standards and interoperability (FHIR, CDA, and IHE).</div>
+        cloud native technologies in Azure and AWS. Strong domain expertise in healthcare standards and interoperability
+        (FHIR, CDA, and IHE).</div>
+
       <h2>Work Experience</h2>
       <article class="dated-entry">
         <div class="date-container">
-          <h4>2018 -</h4>
+          <h4>2020 -</h4>
           <h4>Present</h4>
         </div>
         <div class="entry-container">
-          <h3 class="entry-title">Senior Software Engineer</h4>
-            <span class="entry-subtitle">Allscripts, VT</span>
-            <ul>
-              <li>
-                Assumed a Tech Lead role on a scrum team responsible for clinical interoperability.
-                <ul class="nested-ul">
-                  <li>Interviewing, onboarding, and mentoring junior engineers.</li>
-                  <li>Working with business analysts to determine feature feasibility and timeline.</li>
-                  <li>Assumed responsibility for quality metrics within the team&#39;s domain, for example ensuring all
-                    net-new code is at least 80% covered in unit tests.</li>
-                </ul>
-              </li>
-              <li>Created and establishing patterns/practices for a new FHIR R4 API native to the flagship ambulatory EHR. Secured with
-                OAuth and OpenID.</li>
-              <li>Worked closely with architects and Microsoft engineers to devise a plan to containerize the legacy ambulatory EHR and host in an Azure Kubernetes cluster.</li>
-              <li>Played a key role in leading the development team through a large-scale source code
-                migration and modernization, through early adoption/research into the new code base and peer training.
-              </li>
-            </ul>
+          <h4 class="entry-title">Software Engineer</h4>
+          <span class="entry-subtitle">Averhealth, VT (formerly Aspenti Health)</span>
+          <ul>
+            <li>Planned and executed on a migration of the flagship application to AWS; introducing horizontal
+              scalability and utilizing a suite of managed services.</li>
+            <li>Created a CI/CD pipeline using AWS CodePipeline to automate the building, testing, and deployment of the
+              application to Elastic Beanstalk.</li>
+            <li>Created an AWS Cloud Development Kit (CDK) app to provision the infrastrucutre consistently and
+              automatically through an IaC pipeline.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="dated-entry">
+        <div class="date-container">
+          <h4>2018 -</h4>
+          <h4>2020</h4>
+        </div>
+        <div class="entry-container">
+          <h4 class="entry-title">Senior Software Engineer</h4>
+          <span class="entry-subtitle">Allscripts, VT</span>
+          <ul>
+            <li>
+              Assumed a Tech Lead role on a scrum team responsible for clinical interoperability.
+              <ul class="nested-ul">
+                <li>Interviewing, onboarding, and mentoring junior engineers.</li>
+                <li>Working with business analysts to determine feature feasibility and timeline.</li>
+                <li>Assumed responsibility for quality metrics within the team&#39;s domain, for example ensuring all
+                  net-new code is at least 80% covered in unit tests.</li>
+              </ul>
+            </li>
+            <li>Created and established patterns/practices for a new FHIR R4 API native to the flagship ambulatory EHR.
+              Secured with
+              OAuth and OpenID.</li>
+            <li>Worked closely with architects and Microsoft engineers to devise a plan to containerize the legacy
+              ambulatory EHR and host in an Azure Kubernetes cluster.</li>
+            <li>Played a key role in leading the development team through a large-scale source code
+              migration and modernization, through early adoption/research into the new code base and peer training.
+            </li>
+          </ul>
         </div>
       </article>
 
@@ -220,16 +244,15 @@
           <h4>2018</h4>
         </div>
         <div class="entry-container">
-          <h3 class="entry-title">Software Engineer</h4>
-            <span class="entry-subtitle">Allscripts, VT</span>
-            <ul>
-              <li>Committed to and delivered key features to certify the ambulatory EHR for
-                Meaningful Use 3 within a strict, six month regulatory-driven timeline.</li>
-              <li>Pitched and executed on an iterative plan to fit automated testing/validation of
-                structured clinical documents (CCDA) into the development team's scope. Prevented escape of at least a
-                dozen bugs.</li>
-              <li>Brought on to a special task force to address web server and client performance.</li>
-            </ul>
+          <h4 class="entry-title">Software Engineer</h4>
+          <ul>
+            <li>Committed to and delivered key features to certify the ambulatory EHR for
+              Meaningful Use 3 within a strict, six month regulatory-driven timeline.</li>
+            <li>Pitched and executed on an iterative plan to fit automated testing/validation of
+              structured clinical documents (CCDA) into the development team's scope. Prevented escape of at least a
+              dozen bugs.</li>
+            <li>Brought on to a special task force to address web server and client performance.</li>
+          </ul>
         </div>
       </article>
 
@@ -239,15 +262,13 @@
           <h4>2016</h4>
         </div>
         <div class="entry-container">
-          <h3 class="entry-title">Associate Software Engineer</h4>
-            <span class="entry-subtitle">Allscripts, VT</span>
-            <ul>
-              <li>Collaborated with domestic and international teams to transform service-tier logging
-                from a file-based system to a secure, centralized cloud-based repository.</li>
-              <li>Routinely investigated and resolved critical customer issues within production environments.</li>
-              <li>Represented and helped certify the ambulatory EHR in key IHE interoperability
-                standards via successful cross-vendor testing at Connectathon 2016.</li>
-            </ul>
+          <h4 class="entry-title">Associate Software Engineer</h4>
+          <ul>
+            <li>Collaborated with domestic and international teams to transform service-tier logging
+              from a file-based system to a secure, centralized cloud-based repository.</li>
+            <li>Represented and helped certify the ambulatory EHR in key IHE interoperability
+              standards via successful cross-vendor testing at Connectathon 2016.</li>
+          </ul>
         </div>
       </article>
 
@@ -257,7 +278,7 @@
         <h4>2014</h4>
       </div>
       <div class="entry-container">
-        <h3 class="entry-title">Mental Health Technician / Unit Secretary</h4>
+        <h4 class="entry-title">Mental Health Technician / Unit Secretary</h4>
         <span class="entry-subtitle">University of Vermont Medical Center, VT</span>
         <ul>
           <li>Aided in a broad scope of unit affairs from ordering labs to admitting/discharging
@@ -282,7 +303,7 @@
             <ul>
               <li>C#</li>
               <li>ASP.NET / Core</li>
-              <li>Azure IaaS / PaaS</li>
+              <li>AWS / Azure</li>
             </ul>
           </div>
           <div class="skills-column">
@@ -300,13 +321,13 @@
           <h2>Education</h2>
           <article>
             <div class="entry-container">
-              <h3 class="entry-title">University of Vermont</h4>
-                <span class="entry-subtitle">Burlington, VT</span>
-                <ul>
-                  <li>B.A. Psychology</li>
-                  <li>Courses in web technology and object-oriented programming in Java</li>
-                  <li>Music minor</li>
-                </ul>
+              <h4 class="entry-title">University of Vermont</h4>
+              <span class="entry-subtitle">Burlington, VT</span>
+              <ul>
+                <li>B.A. Psychology</li>
+                <li>Courses in web technology and object-oriented programming in Java</li>
+                <li>Music minor</li>
+              </ul>
             </div>
           </article>
         </div>
